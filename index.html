@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karrett Farm</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lexend&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Lexend', sans-serif;
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(6px);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Lexend', sans-serif;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="home-goods.html">Home Goods</a>
+    <a href="handmade-jewelry.html">Jewelry</a>
+    <a href="farmstand-pantry.html">Pantry</a>
+    <a href="gift-sets.html">Gifts</a>
+    <a href="karrett-kids.html">Karrett Kids</a>
+  </nav>
+  <div class="hero">
+    <h1>Karrett Farm</h1>
+    <div class="tagline">Rooted in faithful sustainability.</div>
+  </div>
+</body>
+</html>
