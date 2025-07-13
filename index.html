@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karrett Farm</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lexend&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lexend', sans-serif;
+      background: url('bg.JPG') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .logo {
+      width: 550px;
+      height: auto;
+      margin: 40px auto 20px;
+    }
+
+    .accordion {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .accordion-item {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .accordion-item h2 {
+      padding: 15px;
+      margin: 0;
+      font-size: 1.2em;
+      background-color: #4a4a4a;
+      cursor: pointer;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 15px;
+      font-size: 1em;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo-carrot.png" class="logo" alt="Karrett Farm Logo" />
+  <div class="accordion">
+    <div class="accordion-item">
+      <h2 onclick="toggleAccordion(this)">Farmstand Pantry</h2>
+      <div class="accordion-content">
+        <p>Jams, pickles, dehydrated herbs, baking mixes, and more...</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 onclick="toggleAccordion(this)">Home Goods</h2>
+      <div class="accordion-content">
+        <p>Soy candles, clay goods, handmade decor...</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 onclick="toggleAccordion(this)">Handmade Jewelry</h2>
+      <div class="accordion-content">
+        <p>Rustic, faith-based jewelry crafted with care...</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 onclick="toggleAccordion(this)">Gift Sets</h2>
+      <div class="accordion-content">
+        <p>Curated bundles for every occasion...</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 onclick="toggleAccordion(this)">Karrett Kids</h2>
+      <div class="accordion-content">
+        <p>Projects, crafts, and fun for young helpers...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAccordion(element) {
+      const item = element.parentElement;
+      item.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
